@@ -106,7 +106,7 @@ a {
     align-self: center;
   }
   .header--title-container h1{
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-weight: bold;
     line-height: 4.5rem;
     color: white;
@@ -416,7 +416,7 @@ a {
     color: var(--just-white);
   }
   .product--card-body{
-    font-size: 1.4rem;
+    font-size: 0.9rem;
     font-weight: 500;
     line-height: 1.8rem;
     color: #808080;
@@ -882,10 +882,13 @@ a {
 }
 @media screen and (min-width: 523px) {
   .header--title-container{
-    margin-top: 3.5rem;
+    margin-top: 3rem;
   }
   .header--title-container h1{
-    font-size: 5rem;
-    line-height: 5.5rem;
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+  .product--card-body{
+    font-size: 1.3rem;
   }
 }
