@@ -403,7 +403,7 @@ a {
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
-    background-image: url(./crediclubpay_assets/pyme-clock.svg);
+    background-image: url(/crediclubpay_assets/pyme-clock.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -426,7 +426,7 @@ a {
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
-    background-image: url(./crediclubpay_assets/pyme-eye.svg);
+    background-image: url(/crediclubpay_assets/pyme-eye.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -436,7 +436,7 @@ a {
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
-    background-image: url(./crediclubpay_assets/pyme-dollar-sign.svg);
+    background-image: url(/crediclubpay_assets/pyme-dollar-sign.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -446,7 +446,7 @@ a {
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
-    background-image: url(./crediclubpay_assets/pyme-check-circle.svg);
+    background-image: url(/crediclubpay_assets/pyme-check-circle.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -584,7 +584,7 @@ a {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url(./crediclubpay_assets/pyme-orange-right-arrow.svg);
+    background-image: url(/crediclubpay_assets/pyme-orange-right-arrow.svg);
     vertical-align: text-bottom;
   }
   .plan--tag.basico{
