@@ -608,6 +608,8 @@ a {
     width: 50%;
     justify-content: center;
     align-items: center;
+    background-color: var(--warm-black);
+    margin-top: -20px;
   }
   footer .left ul{
     font-size: 1.4rem;
@@ -620,7 +622,7 @@ a {
   }
   .left a{
     text-decoration: none;
-    color: var(--warm-black);
+    color: var(--just-white);
   }
   footer img{
     width: auto;
