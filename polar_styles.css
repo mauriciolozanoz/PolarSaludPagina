@@ -403,7 +403,7 @@ a {
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
-    background-image: url(/crediclubpay_assets/pyme-clock.svg);
+    background-image: url(./crediclubpay_assets/pyme-clock.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
