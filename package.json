@@ -1,5 +1,9 @@
 {
   "devDependencies": {
     "@azure/static-web-apps-cli": "^2.0.1"
+  },
+  "scripts": {
+    "build": "echo 'No build step required'",
+    "start": "node index.js"
   }
 }
