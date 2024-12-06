@@ -3,7 +3,7 @@
   "configurations": {
     "crediclub-polar-salud": {
       "appLocation": "./",
-      "outputLocation": "./",
+      "outputLocation": "./dist",
       "apiLocation": null
     }
   }
