@@ -118,7 +118,32 @@ a {
     line-height: 1.8rem;
     color: white;
   }
-  .header--title-container .header--button{
+  :root {
+    --off-white: #f9f9f9;
+    --black: #000;
+    --border-color-1: rgb(0, 100, 255);
+    --border-color-2: rgb(0, 255, 0);
+    --border-color-3: rgb(255, 0, 0);
+  }
+  
+  /* Keyframes for border animation */
+  @keyframes borderAnimation {
+    0% {
+      border-color: var(--border-color-1);
+    }
+    33% {
+      border-color: var(--border-color-2);
+    }
+    66% {
+      border-color: var(--border-color-3);
+    }
+    100% {
+      border-color: var(--border-color-1);
+    }
+  }
+  
+  /* Main button styles */
+  .header--title-container .header--button {
     position: absolute;
     left: calc(50% - 118px);
     top: 270px;
@@ -128,21 +153,24 @@ a {
     width: 255px;
     height: 48px;
     background-color: var(--off-white);
-    box-shadow: 0px 4px 8px rgba(89,73,30,0.16);
-    border: none;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: 3px solid var(--border-color-1); /* Initial border color */
     border-radius: 5px;
     font-size: 1.4rem;
     font-weight: bold;
     text-decoration: none;
     color: var(--black);
+    animation: borderAnimation 3s infinite; /* Add animation */
   }
-  .header--button span{
+  
+  .header--button span {
     display: inline-block;
     width: 13px;
     height: 8px;
     margin-left: 10px;
     background-image: url('./crediclubpay_assets/down-arrow.svg');
-  } 
+  }
+  
   /* navigation.css */
   
   .navigation {
@@ -608,7 +636,7 @@ a {
     width: 50%;
     justify-content: center;
     align-items: center;
-    background-color: var(--just-white);
+    background-color: var(--warm-black);
     margin-top: -20px;
   }
   footer .left ul{
@@ -622,7 +650,7 @@ a {
   }
   .left a{
     text-decoration: none;
-    color: var(--warm-black);
+    color: var(--just-white);
   }
   footer img{
     width: auto;
