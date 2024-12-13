@@ -41,13 +41,18 @@ a {
 } 
 .header__left {
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 0 2rem;
 }
   
-  .header__logo {
+  .header__logo_crediclub {
+    height: 75%;
+    width: 20rem;
+  }
+  .header__logo_polar {
     height: 50%;
-    width: 15rem;
+    width: 12rem;
   }
   
   .header__right {
@@ -488,9 +493,10 @@ a {
   }
 
   .main-bitcoin--title{
+    text-align: center;
     position: absolute;
     z-index: 1;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bold;
     color: white;
     padding-bottom: 150px;
@@ -840,8 +846,6 @@ a {
   display: none;
 }
 
-
-
 @media screen and (min-width: 930px) {
   .main-tables-container{
     display: flex;
@@ -857,10 +861,6 @@ a {
   }
   .plans-container--slider{
     justify-content: center;
-  }
-  .main-bitcoin--title{
-    font-size: 6.5rem;
-    padding-bottom: 300px;
   }
   .bitcoin-img-container .backgroundVideo{
     height: 300px;
@@ -909,7 +909,12 @@ a {
   .details .job {
     font-size: 1.3rem;
   }
+  .main-bitcoin--title{
+    font-size: 6.5rem;
+    padding-bottom: 300px;
+  }
 }
+
 @media screen and (min-width: 523px) {
   .header--title-container{
     margin-top: 3rem;
