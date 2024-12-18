@@ -246,7 +246,7 @@
   @media (max-width: 1024px) {
     .logo_polar_info{
         height: 80px;
-      }
+    }
     .responsive-container-block.Container {
       position: relative;
       align-items: flex-start;
@@ -495,3 +495,45 @@
       padding-left: 0px;
     }
   }
+
+  /* CSS */
+.button-63 {
+  align-items: center;
+  background: rgb(185,255,0);
+  background: linear-gradient(90deg, rgba(185,255,0,1) 0%, rgba(215,249,16,1) 43%, rgba(185,255,0,1) 100%);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 8x 16px 32px rgba(89, 73, 30, 0.16);
+  box-sizing: border-box;
+  color: var(--black);
+  display: flex;
+  font-size: 1rem;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  position: absolute;
+  justify-self: center;
+  left: 50%; /* Centra el botón horizontalmente */
+  transform: translateX(-50%);
+  z-index: 11;
+}
+
+.button-63:active,
+.button-63:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-63 {
+    font-size: 2rem;
+    min-width: 196px;
+  }
+}
