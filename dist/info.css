@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'PP Fragment';
+  src: url('./fonts/PPFragment.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 * {
     font-family: Nunito, sans-serif;
   }
@@ -98,6 +104,7 @@
   }
   
   .text-blk.heading {
+    font-family: 'PP Fragment';
     font-size: 36px;
     line-height: 40px;
     font-weight: 700;
@@ -122,9 +129,7 @@
   }
   
   .cardImgContainer {
-    padding-top: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
     padding-left: 20px;
     border-top-width: 1px;
     border-right-width: 1px;
@@ -499,8 +504,7 @@
   /* CSS */
 .button-63 {
   align-items: center;
-  background: rgb(185,255,0);
-  background: linear-gradient(90deg, rgba(185,255,0,1) 0%, rgba(215,249,16,1) 43%, rgba(185,255,0,1) 100%);
+  background: #DBEA15;
   border: 0;
   border-radius: 8px;
   box-shadow: 8x 16px 32px rgba(89, 73, 30, 0.16);

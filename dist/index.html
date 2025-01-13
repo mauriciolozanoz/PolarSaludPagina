@@ -24,7 +24,7 @@
     <div class="nav">
       <a class="header__left" href="https://www.crediclub.com/">
 		    <img class="header__logo_crediclub" src="./crediclubpay_assets/crediclub-logo2024-08.png" alt="" />
-        <img class="header__logo_polar" src="./crediclubpay_assets/imagen (7).png" alt="" />		  
+        <img class="header__logo_polar" src="./crediclubpay_assets/polar_salud_logo_claro.png" alt="" />		  
       </a>
 
 		  <!-- <ul class="header__middle">
@@ -64,18 +64,18 @@
       <div class="responsive-container-block Container">
         <div class="imgContainer">
           <img class="blueDots" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw3.svg">
-          <img class="mainImg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/aw2.svg">
+          <img class="mainImg" src="./crediclubpay_assets/servicios-2-msi.png">
         </div>
         <div class="responsive-container-block textSide">
           <p class="text-blk heading">
-            Credito Hospital
+            CREDICLUB PERSONAL
           </p>
           <p class="text-blk subHeading">
-            CrediClub en alianza con Polar Salud tiene como misión transformar el acceso a la salud en el Valle de Toluca y México, ofreciendo financiamiento justo para que más personas puedan cubrir honorarios médicos y servicios hospitalarios. En medio de la crisis de acceso a la salud, esta alianza busca ser una solución concreta para brindar atención digna y accesible a quienes más lo necesitan.
+            Crediclub en alianza con Polar Salud tiene como misión transformar el acceso a la salud en el Valle de Toluca y México, ofreciendo financiamiento justo para que más personas puedan cubrir honorarios médicos y servicios hospitalarios. En medio de la crisis de acceso a la salud, esta alianza busca ser una solución concreta para brindar atención digna y accesible a quienes más lo necesitan.
           </p>
-          <div class="div_logo_polar">
+          <!-- <div class="div_logo_polar">
             <img class="logo_polar_info" src="./crediclubpay_assets/imagen (7).png" alt="Logo Polar Salud">
-          </div>
+          </div> -->
           <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
             <div class="cardImgContainer">
               <img class="cardImg" src="./crediclubpay_assets/centro_medico_toluca.jpeg">
@@ -435,7 +435,296 @@
       }
   </style>
   </main>
-  <footer>
+  <style>
+    .footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      margin-top: -2px;
+    }
+    
+    .footer-upper {
+      background: var(--neutrals-black, #000);
+      width: 100%;
+      padding: 48px;
+    }
+    
+    .footer-upper-content {
+      display: flex;
+      width: 100%;
+      align-items: start;
+      gap: 40px 100px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    
+    .contact-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 231px;
+    }
+    
+    .contact-wrapper {
+      display: flex;
+      width: 231px;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    
+    .contact-header {
+      display: flex;
+      width: 130px;
+      flex-direction: column;
+      color: var(--neutrals-white, #fff);
+      padding: 8px 0;
+      font: 400 18px/22px Neptune, sans-serif;
+    }
+    
+    .social-links {
+      display: flex;
+      margin-top: 8px;
+      min-height: 40px;
+      width: 100%;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .social-icon {
+      border-radius: 6px;
+      display: flex;
+      min-height: 36px;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      padding: 10px;
+    }
+    
+    .social-icon img {
+      width: 16px;
+      height: 16px;
+    }
+    
+    .contact-info {
+      display: flex;
+      margin-top: 16px;
+      flex-direction: column;
+      color: var(--neutrals-white, #fff);
+      font: 400 20px/1.2 Neptune, sans-serif;
+    }
+    
+    .tagline {
+      width: 450px;
+      min-width: 240px;
+      color: var(--neutrals-white, #fff);
+      letter-spacing: -0.36px;
+      font: 400 36px/40px PP Fragment, -apple-system, Roboto, Helvetica, sans-serif;
+    }
+    
+    .footer-lower {
+      background: var(--neutrals-black, #000);
+      width: 100%;
+      padding: 0 48px 48px;
+    }
+    
+    .separator {
+      height: 2px;
+      border: 2px solid rgba(222, 222, 222, 1);
+    }
+    
+    .footer-nav {
+      display: flex;
+      margin-top: 48px;
+      width: 100%;
+      align-items: start;
+      gap: 40px 79px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    
+    .nav-column {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    
+    .nav-header {
+      color: var(--neutrals-white, #fff);
+      font: 400 18px/1.2 Neptune, sans-serif;
+      padding: 8px 0;
+    }
+    
+    .nav-links {
+      display: flex;
+      margin-top: 16px;
+      flex-direction: column;
+      gap: 8px;
+    }
+    
+    .nav-link {
+      color: var(--neutrals-white, #fff);
+      font: 500 16px/1.2 Neptune, sans-serif;
+      padding: 8px 0;
+    }
+    
+    .nav-link-active {
+      border-bottom: 2px solid rgba(255, 216, 50, 1);
+    }
+    
+    .footer-bottom {
+      margin-top: 48px;
+      font-family: Neptune, sans-serif;
+    }
+    
+    .address {
+      color: var(--neutrals-white, #fff);
+      font-size: 20px;
+      line-height: 24px;
+      padding: 5px 0;
+    }
+    
+    .copyright {
+      margin-top: 12px;
+      font-size: 12px;
+      color: var(--neutrals-grey---04, #cfcdcd);
+      display: flex;
+      gap: 40px 100px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+    
+    @media (max-width: 991px) {
+      .footer-upper,
+      .footer-lower {
+        padding: 0 20px;
+      }
+      
+      .footer-nav {
+        margin-top: 40px;
+      }
+      
+      .tagline,
+      .address {
+        max-width: 100%;
+      }
+    }
+    </style>
+    
+    <footer class="footer" role="contentinfo">
+      <div class="footer-upper">
+        <div class="footer-upper-content">
+          <p class="tagline">Finanzas digitales que generan prosperidad</p>
+          <div class="contact-section">
+            <div class="contact-wrapper">
+              <h2 class="contact-header">¿Tienes dudas? Contáctanos</h2>
+              <nav class="social-links" aria-label="Social media links">
+                <a href="#" class="social-icon" aria-label="Facebook">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c7e857d0321430b57bec44b5bcb200c95651720d16c4820412284c69d2e19fee?placeholderIfAbsent=true&apiKey=3ce012b2342a4b6f920e0f40512629d1" alt="Facebook icon" />
+                </a>
+                <a href="#" class="social-icon" aria-label="Twitter">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1043cd96949d0d71a3fde8d432aaebb986e0540b2fde92c4df04715c3412e0fb?placeholderIfAbsent=true&apiKey=3ce012b2342a4b6f920e0f40512629d1" alt="Twitter icon" />
+                </a>
+                <a href="#" class="social-icon" aria-label="Instagram">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/01b03ac43e3329254a6a6a836c2b07325c2edc45590088d5c53b91dbd106ec16?placeholderIfAbsent=true&apiKey=3ce012b2342a4b6f920e0f40512629d1" alt="Instagram icon" />
+                </a>
+                <a href="#" class="social-icon" aria-label="LinkedIn">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/bbd8688ca411b51a637bc7dce8870c0ff2fa4c79c55f37ca226a9837684cc642?placeholderIfAbsent=true&apiKey=3ce012b2342a4b6f920e0f40512629d1" alt="LinkedIn icon" />
+                </a>
+                <a href="#" class="social-icon" aria-label="YouTube">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/761d8b2d267d0cd9481b93014aa99b00e39ddb682ed60fa754f56ba5e055989e?placeholderIfAbsent=true&apiKey=3ce012b2342a4b6f920e0f40512629d1" alt="YouTube icon" />
+                </a>
+              </nav>
+              <div class="contact-info">
+                <a href="mailto:contacto@crediclub.com" class="nav-link">contacto@crediclub.com</a>
+                <a href="tel:+818000980" class="nav-link">+81 8000 9800</a>
+              </div>
+            </div>
+          </div>
+          <!-- <p class="tagline">Finanzas digitales que generan prosperidad</p> -->
+        </div>
+      </div>
+    
+      <div class="footer-lower">
+        <div class="separator"></div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <div class="nav-column">
+            <h3 class="nav-header">Compañía</h3>
+            <div class="nav-links">
+              <a href="#" class="nav-link">Crédito</a>
+              <a href="#" class="nav-link">Inversión</a>
+              <a href="#" class="nav-link">Salud financiera</a>
+              <a href="#" class="nav-link">Nosotros</a>
+            </div>
+          </div>
+    
+          <div class="nav-column">
+            <h3 class="nav-header">Transparencia</h3>
+            <div class="nav-links">
+              <a href="https://www.crediclub.com/informacion-financiera" class="nav-link">Información financiera</a>
+              <a href="https://www.crediclub.com/despachos-de-cobranza" class="nav-link">Despachos de cobranza</a>
+              <a href="https://www.crediclub.com/contacto#denuncias" class="nav-link">Denuncias</a>
+              <a href="https://www.crediclub.com/contacto" class="nav-link">Contacto</a>
+              <a href="https://www.crediclub.com/voz-del-cliente" class="nav-link">Voz del cliente</a>
+              <a href="https://www.crediclub.com/modificaciones-de-contratos" class="nav-link">Modificaciones de contratos</a>
+              <a href="https://www.crediclub.com/fondo-de-proteccion" class="nav-link">Fondo de Protección</a>
+            </div>
+          </div>
+    
+          <div class="nav-column">
+            <h3 class="nav-header">Regulación</h3>
+            <div class="nav-links">
+              <a href="https://www.crediclub.com/terminos-y-condiciones-de-los-servicios-electronicos" class="nav-link">Términos y condiciones de los servicios electrónicos</a>
+              <a href="https://www.crediclub.com/aviso-de-confidencialidad" class="nav-link">Aviso de confidencialidad</a>
+              <a href="https://www.crediclub.com/politica-de-privacidad" class="nav-link">Política de privacidad</a>
+              <a href="https://www.crediclub.com/aclaraciones-y-reclamaciones-une-condusef" class="nav-link">Aclaraciones y reclamaciones (CONDUSEF/UNE)</a>
+              <a href="https://cdn.prod.website-files.com/6508cadbf31768b3ffa4f73e/65e9983f1983ce9fe4c18c29_Cicular%20Banco%20de%20Me%CC%81xico%20reglas%20de%20domiciliacio%CC%81n_1.pdf" class="nav-link">Contrato de domiciliación</a>
+              <a href="https://www.crediclub.com/normatividad" class="nav-link">Normatividad</a>
+              <a href="https://www.crediclub.com/buro" class="nav-link"><img src="./crediclubpay_assets/65e991601bb77430ad7fc48a_logo-buro.png" alt=""></a>
+            </div>
+          </div>
+    
+          <div class="nav-column">
+            <h3 class="nav-header">Beneficios y promociones</h3>
+            <div class="nav-links">
+              <a href="https://cdn.prod.website-files.com/6508cadbf31768b3ffa4f73e/6709528840ac652554cf7d05_TYC_Crediton%20Activa%20(1)%20(1).pdf" class="nav-link">Términos y condiciones de las promociones</a>
+              <a href="https://cdn.prod.website-files.com/6508cadbf31768b3ffa4f73e/670feee2aa7d8efdda5fae73_BASES%20LEGALES%20CREDITON%20ACTIVA%20141024.docx.pdf" class="nav-link">Bases Legales de Creditón Activa</a>
+              <a href="https://cdn.prod.website-files.com/6508cadbf31768b3ffa4f73e/670ff07e3c373987b8e09e25_TYC%20Beneficios.pdf" class="nav-link">Términos y condiciones de los beneficios</a>
+            </div>
+          </div>
+    
+          <!-- <div class="nav-column">
+            <h3 class="nav-header">Idioma</h3>
+            <div class="nav-links">
+              <button class="nav-link" aria-pressed="true">ES</button>
+              <button class="nav-link" aria-pressed="false">EN</button>
+            </div>
+          </div> -->
+        </nav>
+    
+        <div class="footer-bottom">
+          <address class="address">
+            Avenida San Jerónimo 310, Piso 27,<br>
+            Colonia San Jerónimo, Monterrey, Nuevo León. C.P. 64640.
+          </address>
+          <div class="copyright">
+            <p>©Crediclub S.A. De C.V. S.F.P. 2023. Todos los derechos reservados.</p>
+            <a href="https://cdn.prod.website-files.com/6508cadbf31768b3ffa4f73e/6776fdda22fc50c220e9047e_202501%20Cuadernillo%20Costos%20y%20comisiones.pdf" class="nav-link">Consulta los costos y comisiones de nuestros productos.</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <!-- <footer>
     <section class="left">
       <ul>
         <li> <a href="https://www.crediclub.com/">Crediclub</a></li>
@@ -446,7 +735,7 @@
     <section class="rigth">
       <img src="./crediclubpay_assets/crediclub-logo2024-08.png" alt="logo de creditonegocio 2020">
     </section>
-  </footer>
+  </footer> -->
 <!-- Swiper JS -->
 <!-- <script src="./swiper-bundle.min.js"></script> -->
 <script src="./polar.js"></script>
